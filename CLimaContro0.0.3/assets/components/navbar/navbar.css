@@ -1,0 +1,91 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    height: 70px;
+    padding: 13px 52px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 51px;
+    height: 45px;
+}
+
+.logo-text {
+    color: #1B4F72;
+    font-size: 25px;
+    font-weight: 400;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+/* SEÇÃO CLIMA */
+.clima-local {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1B4F72;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.clima-local span {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Ícone do clima */
+#status-img img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .logo-text, .clima-local {
+        font-size: 18px;
+    }
+
+    .clima-local {
+        gap: 5px;
+    }
+
+    #status-img img {
+        width: 30px;
+        height: 30px;
+    }
+}

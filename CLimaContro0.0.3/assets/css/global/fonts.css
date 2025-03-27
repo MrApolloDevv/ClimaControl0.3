@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+    --font-size-base: 16px;
+    --font-size-heading: 24px;
+    --font-size-subheading: 20px;
+    --font-size-small: 14px;
+}
+
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: #333;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 { font-size: var(--font-size-heading); }
+h2 { font-size: var(--font-size-subheading); }
+h3 { font-size: calc(var(--font-size-subheading) - 2px); }
+
+p {
+    font-size: var(--font-size-base);
+    margin-bottom: 1rem;
+}
+
